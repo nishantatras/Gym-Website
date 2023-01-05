@@ -1,0 +1,408 @@
+/* Midnight Blue
+#145DA0
+
+Dark Blue
+#0C2D48
+
+Blue
+#2E8BC0
+
+Baby Blue
+#B1D4E0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+}
+.navigation{
+    background-color: #0C2D48;
+    height: 10vh;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    padding: 1.2rem;
+}
+
+li a{
+   text-decoration: none;
+   color: white; 
+}
+
+a:focus{
+    color: #145DA0;
+}
+
+a:hover{
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    color: #145DA0;
+}
+
+.button{
+padding: 0.5rem 1rem;
+border: none;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease-in;
+background-color:#145DA0;
+color: white;
+}
+ 
+.intro{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.intro p,.intro span{
+color: white;
+transform: rotate(10deg);
+margin-left: 2vw;
+}
+
+.intro p{
+    font-size: 3vh;
+}
+
+.intro span{
+    font-size: 7vh;
+    font-weight: 600;
+    word-spacing: 1.5vw;
+    letter-spacing: 0.8vw;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about{
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    margin-top: 20vh;
+}
+
+.about-img{
+    width: 50%;
+    margin: 5vh 5vw 5vh 0;
+    background-image: url(images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-desc{
+    width: 50%;
+    background-color: #0C2D48;
+    margin: 5vh 0 5vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-desc h1{
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 5vh;
+}
+.about-desc p{
+    font-size: 2.3vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#readme{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h1{
+    font-size: 4.5vh;
+    text-align: center;
+    color: #145DA0;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.wrap-img{
+    width: 50%;
+    background-image: url(images/bruce-mars-gJtDg6WfMlQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: right;
+}
+
+.wrap-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 0 5vw;
+}
+
+.wrap-desc h1{
+    margin-bottom: 8vh;
+    font-size: 5vh;
+    font-weight: 600;
+}
+
+.wrap-desc p{
+    color: #145DA0;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+#motivation-img{
+    background-image:url(images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg) ;
+    
+}
+#result-img{
+    background-image: url(images/emily-sea-coiWR0gT8Cw-unsplash.jpg);
+}
+
+.follow{
+    height: 80vh;
+}
+
+.follow h1{
+    font-size: 5vh;
+    text-align: center;
+    color: #145DA0;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img{
+    height: 40vh;
+    width: 20%;
+}
+
+.join{
+    margin-top: 10vh;
+    height: 80vh;
+    background-image: url(images/follow/luis-vidal-FodEsaNZs48-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join h1,.join p{
+    color: white;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.classes{
+    height: 80vh;
+}
+.classes h1{
+    font-size: 5vh;
+    text-align: center;
+    color: #145DA0;
+    margin-bottom: 15vh;
+    margin-top: 5vh;
+}
+
+.class{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.class-elm{
+    width: 25%;
+}
+
+#class-desc{
+    font-size: 5vh;
+    color: #145DA0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 480px) {
+.small{
+    display: none;
+}
+#login{
+    margin-bottom: 2vh;
+}
+
+.intro p,.intro span{
+transform: rotate(0deg);
+}
+
+.intro {
+background: linear-gradient(#0C2D48,#145DA0,#B1D4E0);
+}
+
+.intro p,.intro span{
+color: #0C2D48;
+}
+
+.intro {
+    justify-content: center;
+    text-align: center;
+}
+.about{
+    margin-top: 0;
+}
+.about-img{
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-top: 50vh;
+}
+.about-desc{
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+}
+.about{
+    flex-direction: column;
+}
+
+.classes h1{
+    margin-top: 10vh;
+}
+
+.features h1{
+    margin-top: 10vh;
+}
+
+.wrapper{
+    flex-direction: column-reverse;
+}
+.wrap-img,.wrap-desc{
+    width: 100%;
+    height: 100%;
+}
+
+.follow{
+    display: none;
+}
+
+.contact{
+    flex-direction: column;
+}
+.contact h1{
+    margin: 10vh;
+}
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 5vh;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color:#0C2D48;
+    margin: 1vh;
+    margin-right: 3vw;
+}
+
+.contact-col div p{
+    padding: 0;
+    color: #B1D4E0;
+}
+
+.contact-col div h5{
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    color: #145DA0;
+    font-weight: 400;
+}
+
+.contact-col input,.contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between
+}
+
+.contact h1{
+    font-size: 4vh;
+}
+
+@media only screen and (max-width: 760px)   {
+    .mid{
+        display: none;
+    }
+    #com-img{
+        background-position: center;
+    }
+}
